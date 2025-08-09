@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/Mpumi/Desktop/Mpendulo-Code/enhanced-form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML5 Page</title>
+  <link rel="stylesheet" href="./Sample HTML5 Page_files/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .media {
+      margin-top: 20px;
+    }
+    .form-section {
+      margin-top: 30px;
+    }
+    input, textarea, select, button {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      display: block;
+      width: 100%;
+      padding: 8px;
+    }
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Travel Inspiration</h1>
+  <h3>Discover amazing destinations around the world</h3>
+
+   <title>Local Image Display</title>
+  <img src="./Sample HTML5 Page_files/pexels-vincent-gerbouin-445991-1628086.jpg" alt="Local Image" width="300" height="200">
+
+  <p>Imagine a place where the sun shines brightly, warming your skin as you bask in the glistening blue waters.</p>
+  <p>The air filled with the sweet scent of tropical showers, the vibrant hues accentuated by the vivid greens of the foliage.</p>
+  <p>Welcome to Bora Bora, an island paradise in French Polynesia, where you can soak up the sun on ptistine beaches, explore coral reefs with their dazzling array of marine life, or simply relax in the warmth of the golden sand.</p>
+
+  <h2>Interesting factsabout Bora Bora (Ordered List)</h2>
+  <ol>
+    <li>Unique geography</li>
+    <li>Local Customs</li>
+    <li>it is an underwater paradise</li>
+  </ol>
+
+  <h2>Traditional Dishes Offered (Unordered List)</h2>
+  <ul>
+    <li>Poisson Cru</li>
+    <li>Tahitian Croissant</li>
+    <li>Miti</li>
+  </ul>
+
+  <h2>Bora Bora Activities (Table)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Weather</th>
+        <th>Activities</th>
+        <th>Attractions</th>
+        <th>Hotels</th>
+        <th>Restaurants</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sunny</td>
+        <td>Snorkeling</td>
+        <td>Mount Otemanu</td>
+        <td>Four Seasons Resort</td>
+        <td>Bloody Mary's</td>
+      </tr>
+      <tr>
+        <td>Average High</td>
+        <td>Diving</td>
+        <td>Mtira Beach</td>
+        <td>Resort Bora Bora</td>
+        <td>St James restaurant</td>
+      </tr>
+      <tr>
+        <td>temparature of 85 degrees (F)</td>
+        <td>Jet Skiing</td>
+        <td>Bora Bora Lagoon</td>
+        <td>La Villa Mahana</td>
+      </tr>
+        <tr>
+
+    </tr></tbody>
+  </table>
+
+  <div class="media">
+    <h2>Watch a Sample Video</h2>
+    <video controls="" width="400">
+      <source src="\Users\Mpumi\Downloads\5670197-hd_1920_1080_30fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Listen to an Audio Clip</h2>
+    <audio controls="">
+      <source src="c:\Users\Mpumi\Downloads\5670197-hd_1920_1080_30fps.mov" type="audio/mpeg">
+      
+    </audio>
+    <audio controls="">
+  <source src="c:\Users\Mpumi\Downloads\loop-file-positive-and-gentle-piano-song-157353.mp3" type="audio/mpeg">
+  </audio>
+  </div>
+
+  <div class="form-section">
+    <h2>Contact Form</h2>
+     <h2>Travel Interest Form</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required="">
+
+        <label for="travel-time">Preferred Travel Time:</label>
+        <input type="text" id="travel-time" name="travel-time" placeholder="e.g., December 2025">
+
+        <label for="interest">Travel Interest:</label>
+        <select id="interest" name="interest" onchange="checkOther(this)">
+            <option value="">-- Select --</option>
+            <option value="Beach">Beach</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Culture">Culture</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <div id="other-input" class="hidden">
+            <label for="other-text">Please specify:</label>
+            <input type="text" id="other-text" name="other-text">
+        </div>
+
+        <button type="submit">Submit</button>
+    
+
+    <script>
+        function checkOther(select) {
+            const otherInput = document.getElementById('other-input');
+            if (select.value === 'Other') {
+                otherInput.classList.remove('hidden');
+            } else {
+                otherInput.classList.add('hidden');
+            }
+        }
+        </script>
+
+        <p>
+  <a href="file:///C:/Users/Mpumi/Desktop/Mpendulo-Code/policy.html" target="_blank">View our Privacy Policy</a>
+</p>
+
+
+
+
+<footer>
+    <div class="container">
+      <p>© 2025 Mpendulo Ngoma. All rights reserved.</p>
+
+      <h3>Thanks for your interest</h3>
+    </div>
+  </footer>
+</div></body></html>
